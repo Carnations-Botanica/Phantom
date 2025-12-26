@@ -69,7 +69,7 @@ Tipping/Donating is not required, but will greatly assist me with day to day lif
 **To use Phantom, you must be using [the latest version of Lilu](https://github.com/acidanthera/Lilu/releases) (atleast 1.7.0+ required) to properly load the plug-in.**
 
 1. Download the latest RELEASE or DEBUG from the Releases tab.
-2. Phanton requires a custom build of [WhateverGreen](https://github.com/Carnations-Botanica/WhateverGreen/actions/runs/15656846758) that does **NOT** conflict with Phantom's Modules.
+2. Phantom requires a custom build of [WhateverGreen](https://github.com/Carnations-Botanica/WhateverGreen/actions/runs/15656846758) that does **NOT** conflict with Phantom's Modules.
 3. Drag/Drop into your OpenCore's Kexts folder.
 4. Use ProperTree to OC Snapshot and add the kext to your config.plist
 5. Boot macOS, verify the kernel extension is loaded with ``kextstat``.
