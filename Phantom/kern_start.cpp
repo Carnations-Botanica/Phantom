@@ -214,7 +214,7 @@ void PHTM::init() {
     // Begin based on kernel version detected.
 	// This is messy because internally, we're debugging each version independently
 	if (PHTM::darwinMajor >= KernelVersion::Tahoe) {
-        DBGLOG(MODULE_INIT, "Detected macOS Tahoe (16.x) or newer.");
+        DBGLOG(MODULE_INIT, "Detected macOS Tahoe (26.x) or newer.");
 		DBGLOG(MODULE_WARN, "This version has not been verified to work with Phantom!");
 		DBGLOG(MODULE_INIT, "Registering PHTM::solveSysCtlChildrenAddr with onPatcherLoadForce anyway.");
     	lilu.onPatcherLoadForce(&PHTM::solveSysCtlChildrenAddr);
