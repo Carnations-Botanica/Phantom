@@ -23,7 +23,7 @@ int PHTM::darwinMajor = 0;
 int PHTM::darwinMinor = 0;
 
 // To only be modified by CarnationsInternal, to display various Internal logs and headers
-const bool PHTM::IS_INTERNAL = true; // MUST CHANCE THIS TO FALSE BEFORE CREATING COMMITS
+const bool PHTM::IS_INTERNAL = false; // MUST CHANCE THIS TO FALSE BEFORE CREATING COMMITS
 
 // From RestrictEvents - RestrictEvents.cpp
 // https://github.com/acidanthera/RestrictEvents/blob/41eb8cb8c1caf737eb6636638a1c76d0679c6400/RestrictEvents/RestrictEvents.cpp#L191C2-L222C3
