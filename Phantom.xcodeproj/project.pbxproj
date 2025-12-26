@@ -732,7 +732,7 @@
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"L2D_VERSION=\\\"$(L2D_VERSIONING)\\\"",
 					"PHTM_VERSION=\\\"$(CURRENT_PROJECT_VERSION)\\\"",
@@ -742,7 +742,7 @@
 				INFOPLIST_FILE = Phantom/Info.plist;
 				L2D_VERSIONING = 1.0.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.4;
 				MODULE_NAME = org.Carnations.Phantom;
 				MODULE_START = Phantom_kern_start;
 				MODULE_STOP = Phantom_kern_stop;
@@ -759,7 +759,7 @@
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.2;
+				CURRENT_PROJECT_VERSION = 1.0.4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"L2D_VERSION=\\\"$(L2D_VERSIONING)\\\"",
 					"PHTM_VERSION=\\\"$(CURRENT_PROJECT_VERSION)\\\"",
@@ -769,7 +769,7 @@
 				INFOPLIST_FILE = Phantom/Info.plist;
 				L2D_VERSIONING = 1.0.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.4;
 				MODULE_NAME = org.Carnations.Phantom;
 				MODULE_START = Phantom_kern_start;
 				MODULE_STOP = Phantom_kern_stop;

@@ -66,10 +66,11 @@ bool reRouteSecureLevel(KernelPatcher &patcher) {
 	SLP::originalSecureLevelHandler = securelevelNode->oid_handler;
     DBGLOG(MODULE_RRSL, "Successfully saved original 'securelevel' sysctl handler.");
 	
-	// On macOS Ventura (Darwin 22) and newer (?), we must disable kernel write protection.
-    // Not too sure when this began to be a requirement, but let's do it for Vent+ for now.
-	if (getKernelVersion() >= KernelVersion::Ventura) {
-        DBGLOG(MODULE_RRSL, "Ventura or newer detected. Disabling kernel write protection...");
+	// On macOS Big Sur (Darwin 20) and newer (?), we must disable kernel write protection.
+    // Not too sure when this began to be a requirement, but let's do it for Big Sur+ for now.
+    // Various reports indicate it can work on Big Sur without, but on some hardware, may panic.
+	if (getKernelVersion() >= KernelVersion::BigSur) {
+        DBGLOG(MODULE_RRSL, "Big Sur or newer detected. Disabling kernel write protection...");
         PANIC_COND(MachInfo::setKernelWriting(true, patcher.kernelWriteLock) != KERN_SUCCESS, MODULE_SHORT, "Failed to disable kernel write protection.");
     }
     
@@ -77,7 +78,7 @@ bool reRouteSecureLevel(KernelPatcher &patcher) {
     securelevelNode->oid_handler = phtm_sysctl_securelevel;
 	
 	// Re-enable kernel write protection if we disabled it.
-    if (getKernelVersion() >= KernelVersion::Ventura) {
+    if (getKernelVersion() >= KernelVersion::BigSur) {
         DBGLOG(MODULE_RRSL, "Re-enabling kernel write protection.");
         MachInfo::setKernelWriting(false, patcher.kernelWriteLock);
     }
